@@ -77,7 +77,7 @@ async function setupAnswer() {
     const images = group.querySelectorAll("img");
 
     // Get one sample per image
-    const samples = random.sampleCategory(Settings.categories.color, {
+    const samples = random.sampleCategory(Settings.categories.black, {
         count: images.length
     });
 

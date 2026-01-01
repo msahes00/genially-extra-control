@@ -17,7 +17,7 @@ async function main() {
         throw new Error("Number of objects and boxes do not match")
 
     // Get the images to use
-    const data = random.sampleCategory(Settings.categories.color, {
+    const data = random.sampleCategory(Settings.categories.black, {
         count: objects.length,
     });
 

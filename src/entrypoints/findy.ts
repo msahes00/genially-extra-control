@@ -52,7 +52,7 @@ async function main() {
 async function setupAnswer() {
 
     // Get one answer
-    const answer = random.sampleCategory(Settings.categories.color)[0];
+    const answer = random.sampleCategory(Settings.categories.black)[0];
 
     // Find the date and climb to the group
     const date = await Container.search(Settings.html.date);

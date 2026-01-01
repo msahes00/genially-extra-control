@@ -52,7 +52,7 @@ async function setupAnswer(
     const max = idx;
 
     // Get one answer
-    const answer = random.sampleCategory(Settings.categories.color, {
+    const answer = random.sampleCategory(Settings.categories.black, {
         minIndex: min,
         maxIndex: max,
     })[0];
@@ -97,7 +97,7 @@ function setupTable(
     // Generate a random amount of hits
     const hitCount = random.biasedInt(0, total, 0, 10);
 
-    const data = random.sampleCategory(Settings.categories.color, {
+    const data = random.sampleCategory(Settings.categories.black, {
         count: total,
         include: new Array(hitCount).fill(answer),
         minIndex: min,

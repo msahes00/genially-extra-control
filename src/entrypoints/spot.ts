@@ -17,7 +17,7 @@ async function main() {
     const shuffled = random.shuffle(spots);
     
     // Generate and assign correct items
-    random.sampleCategory(Settings.categories.numColor, { count: hitMax })
+    random.sampleCategory(Settings.categories.numBlack, { count: hitMax })
         .forEach((item, i) => setupSpot(shuffled[i], true, item.src));
     
     // Generate and assign wrong items

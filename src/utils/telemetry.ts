@@ -56,7 +56,7 @@ export const send = async (
         };
         
         const { error } = await supabase
-            .from('telemetry')
+            .from('telemetrycontrol')
             .insert(row);
 
         if (error) throw error;
